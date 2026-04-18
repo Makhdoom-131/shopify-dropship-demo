@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoWallet - The Slimmest Smart Wallet</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">NEOWALLET<span class="dot">.</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#" class="nav-cta">Buy Now</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">☰</div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="badge-trust">⭐ As Seen in TechCrunch & Forbes</div>
+                <h1>Carry Your <br><span class="highlight">Digital Life</span> Securely.</h1>
+                <p>The slimmest smart wallet with RFID blocking, GPS tracking, and instant card access. Fits 12 cards without the bulk.</p>
+                
+                <div class="hero-pricing">
+                    <span class="old-price">$98.00</span>
+                    <span class="new-price">$49.00</span>
+                    <span class="discount-badge">50% OFF</span>
+                </div>
+
+                <button class="btn-primary" id="heroBuyBtn">Add To Cart - Get 50% Off</button>
+                
+                <div class="urgency-bar">
+                    ⏳ Sale ends in: <span id="countdown" class="timer">02:45:00</span>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1627123424574-724758594e93?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Slim Smart Wallet">
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <h2 class="section-title">Why NeoWallet?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon">🛡️</div>
+                    <h3>RFID Blocking</h3>
+                    <p>Military-grade material stops wireless thieves from scanning your cards.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">📍</div>
+                    <h3>GPS Tracker</h3>
+                    <p>Never lose your wallet again. Track it instantly via our app.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">⚖️</div>
+                    <h3>Ultra-Slim</h3>
+                    <p>Only 0.3 inches thick. You won't even feel it in your front pocket.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof / Reviews -->
+        <section id="reviews" class="reviews-section">
+            <h2 class="section-title">Rated 4.9/5 by 2,400+ Men</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Thinnest wallet I've ever owned. The GPS tracker saved me twice already!"</p>
+                    <div class="reviewer">- Mark T. <span class="verified">✅ Verified Purchase</span></div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Bought this for my husband. He throws away all his old bulky wallets now."</p>
+                    <div class="reviewer">- Sarah L. <span class="verified">✅ Verified Purchase</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sticky Bottom Buy Bar -->
+    <div class="sticky-bar" id="stickyBar">
+        <div class="sticky-info">
+            <span class="sticky-title">NeoWallet</span>
+            <span class="sticky-price"><s>$98</s> $49.00</span>
+        </div>
+        <button class="btn-sticky" id="stickyBuyBtn">Buy Now</button>
+    </div>
+
+    <!-- Hidden Success Toast -->
+    <div class="toast" id="successToast">✅ Added to cart!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
